@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "trellis-document-classification"
+version = "0.1.0"
+description = "Document classification api case study"
+authors = ["Alex Davidson <WayUDo@gitlab.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python=">=3.9"
+nomkl = "^0.0.3"
+faiss-cpu = "^1.8.0"
+scikit-learn = "^1.5.0"
+asyncio = "^3.4.3"
+pandas = "^2.2.2"
+tensorflow = "^2.16.1"
+transformers = "^4.41.2"
+tf-keras = "^2.16.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
