@@ -6,7 +6,7 @@ from service_models import DocumentClassifier, DocumentClassifierConfig, Documen
 app = FastAPI()
 
 # Initialize the ConfigLoader with the path to the serialized configuration
-document_classification_config = DocumentClassifierConfigLoader(filepath='/Users/alex/trellis-document-classification/trellis_document_classification/service_model_bundle.joblib', config_type=DocumentClassifierConfig)
+document_classification_config = DocumentClassifierConfigLoader(filepath='trellis_document_classification/service_model_bundle.joblib', config_type=DocumentClassifierConfig)
 
 # Initialize the DocumentClassifier with the ConfigLoader
 classifier = DocumentClassifier(config_loader=document_classification_config)
